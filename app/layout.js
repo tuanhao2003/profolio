@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
       {
         process.env.NEXT_PUBLIC_GTM &&

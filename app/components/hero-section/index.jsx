@@ -9,6 +9,7 @@ import { MdDownload } from "react-icons/md";
 import { SiLeetcode } from "react-icons/si";
 
 function HeroSection({ profile }) {
+  console.log(profile);
 
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
@@ -49,7 +50,7 @@ function HeroSection({ profile }) {
             >
               <FaFacebook size={24} />
             </Link>
-            <Link
+            {/* <Link
               href={userData.leetcode}
               target='_blank'
               className="transition-all text-teal-500 hover:scale-125 duration-300"
@@ -62,17 +63,17 @@ function HeroSection({ profile }) {
               className="transition-all text-teal-500 hover:scale-125 duration-300"
             >
               <FaTwitterSquare size={24} />
-            </Link>
+            </Link> */}
           </div>
 
-          <div className="w-full justify-center flex items-center gap-3 mt-6">
+          {/* <div className="w-full justify-center flex items-center gap-3 mt-6">
             <Link target="_blank" href={userData.resume} className="bg-gradient-to-r to-pink-500 from-violet-600 p-[1px] rounded-full transition-all duration-300 hover:from-pink-500 hover:to-violet-600">
               <button className="px-3 text-xs md:px-4 py-2 md:py-2.5 bg-[#0d1224] rounded-full border-none text-center font-medium uppercase tracking-wider text-[#ffff] no-underline transition-all duration-200 ease-out  md:font-semibold flex items-center gap-1 hover:gap-3">
                 <span>Get Resume</span>
                 <MdDownload size={16} />
               </button>
             </Link>
-          </div>
+          </div> */}
 
         </div>
 
@@ -99,13 +100,13 @@ function HeroSection({ profile }) {
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-green-400">{profile.name}</span>
+                <span className="text-green-400">tuanhao2003</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
                 <span className="ml-4 lg:ml-8 mr-2 text-white">company:</span>
                 <span className="text-gray-400">{`'`}</span>
-                <span className="text-green-400">{profile.company}</span>
+                <span className="text-green-400">No</span>
                 <span className="text-gray-400">{`',`}</span>
               </div>
               <div>
@@ -144,11 +145,6 @@ function HeroSection({ profile }) {
                   ))
                 }
                 <span className="text-gray-400">{"'],"}</span>
-              </div>
-              <div>
-                <span className="ml-4 lg:ml-8 mr-2 text-white">hireable:</span>
-                <span className="text-orange-400">{profile?.hireable.toString()}</span>
-                <span className="text-gray-400">,</span>
               </div>
               <div><span className="text-gray-400">{`};`}</span></div>
             </code>
